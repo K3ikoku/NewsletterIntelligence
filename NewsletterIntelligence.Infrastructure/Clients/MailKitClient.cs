@@ -16,7 +16,7 @@ public class MailKitClient(ImapSettings settings) : IMailKitClient
         await client.AuthenticateAsync(settings.Username, settings.Password);
         
         // Open folder
-        var folder = await client.GetFolderAsync("Newsletters");
+        var folder = await client.GetFolderAsync("Nyhetsbrev");
         await folder.OpenAsync(FolderAccess.ReadOnly);
         
         // Get all messages

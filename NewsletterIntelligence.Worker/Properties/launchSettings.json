@@ -1,11 +1,10 @@
 ﻿{
-  "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
-    "NewsletterIntelligence": {
+    "NewsletterIntelligence.Worker": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5181",
       "environmentVariables": {
-        "DOTNET_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }

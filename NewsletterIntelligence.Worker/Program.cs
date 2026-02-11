@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using NewsletterIntelligence;
 using NewsletterIntelligence.Domain.Configurations;
@@ -6,7 +8,8 @@ using NewsletterIntelligence.Infrastructure.Clients.Interfaces;
 using NewsletterIntelligence.Infrastructure.Services;
 using NewsletterIntelligence.Infrastructure.Services.Interfaces;
 
-var builder = Host.CreateApplicationBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddHostedService<Worker>();
 
 // Map settings
@@ -21,5 +24,13 @@ builder.Services.AddTransient<IMailKitClient, MailKitClient>();
 
 builder.Services.AddSingleton(sp => sp.GetRequiredService<IOptions<ImapSettings>>().Value);
 
-var host = builder.Build();
-host.Run();
+// Build api for dev purposes
+var app = builder.Build();
+
+app.MapGet("/Newsletter", async (IEmailService emailService) =>
+{
+    var emails = await emailService.GetAndCleanEmails();
+    return Results.Ok(emails);
+});
+
+app.Run();

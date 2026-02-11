@@ -2,16 +2,15 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsletterIntelligence.Worker", "NewsletterIntelligence.Worker\NewsletterIntelligence.Worker.csproj", "{B6756900-01EA-4481-B53F-E4B056037480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsletterIntelligence.Api", "NewsletterIntelligence.Api\NewsletterIntelligence.Api.csproj", "{F1739490-324D-46F3-AFB7-FDE6D321C41F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D58B39A9-0A03-485B-BAF7-F77BCC184581}"
 	ProjectSection(SolutionItems) = preProject
-		appsettings.json = appsettings.json
-		Dockerfile = Dockerfile
-		.dockerignore = .dockerignore
-		.gitignore = .gitignore
 		README.md = README.md
-		appsettings.Development.json = appsettings.Development.json
+		.gitignore = .gitignore
+		NewsletterIntelligence.Worker\appsettings.Development.json = NewsletterIntelligence.Worker\appsettings.Development.json
+		NewsletterIntelligence.Worker\appsettings.json = NewsletterIntelligence.Worker\appsettings.json
+		NewsletterIntelligence.Worker\Dockerfile = NewsletterIntelligence.Worker\Dockerfile
+		NewsletterIntelligence.Worker\NewsletterIntelligence.Api.http = NewsletterIntelligence.Worker\NewsletterIntelligence.Api.http
+		NewsletterIntelligence.Worker\Properties\launchSettings.json = NewsletterIntelligence.Worker\Properties\launchSettings.json
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsletterIntelligence.Infrastructure", "NewsletterIntelligence.Infrastructure\NewsletterIntelligence.Infrastructure.csproj", "{B9FC84F4-12DA-4A92-8839-029659535496}"
@@ -28,10 +27,6 @@ Global
 		{B6756900-01EA-4481-B53F-E4B056037480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6756900-01EA-4481-B53F-E4B056037480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6756900-01EA-4481-B53F-E4B056037480}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1739490-324D-46F3-AFB7-FDE6D321C41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1739490-324D-46F3-AFB7-FDE6D321C41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1739490-324D-46F3-AFB7-FDE6D321C41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1739490-324D-46F3-AFB7-FDE6D321C41F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B9FC84F4-12DA-4A92-8839-029659535496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B9FC84F4-12DA-4A92-8839-029659535496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9FC84F4-12DA-4A92-8839-029659535496}.Release|Any CPU.ActiveCfg = Release|Any CPU
