@@ -7,11 +7,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D58B39A9-0A03-485B-BAF7-F77BCC184581}"
 	ProjectSection(SolutionItems) = preProject
 		appsettings.json = appsettings.json
-		appsettings.Development.json = appsettings.Development.json
 		Dockerfile = Dockerfile
 		.dockerignore = .dockerignore
 		.gitignore = .gitignore
 		README.md = README.md
+		appsettings.Development.json = appsettings.Development.json
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsletterIntelligence.Infrastructure", "NewsletterIntelligence.Infrastructure\NewsletterIntelligence.Infrastructure.csproj", "{B9FC84F4-12DA-4A92-8839-029659535496}"
